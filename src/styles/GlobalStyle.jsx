@@ -6,6 +6,8 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: 'Gowun Batang', serif;
+
+    
   }
   /* *::before, *::after{
     box-sizing: border-box;
@@ -33,6 +35,8 @@ const GlobalStyle = createGlobalStyle`
     display: block;
   }
   html, body{
+    color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.body};
     -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
     &::-webkit-scrollbar{
@@ -41,3 +45,5 @@ const GlobalStyle = createGlobalStyle`
     
   }
 `;
+
+export default GlobalStyle;

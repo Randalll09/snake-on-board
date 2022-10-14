@@ -126,3 +126,5 @@ const menu = [
     category: '',
   },
 ];
+
+export default menu;
